@@ -18,6 +18,15 @@ class Db {
   find(predicate) {
     return Promise.resolve(filter(this.rows, predicate));
   }
+  fuzzyFind(predicate) {
+    const key = Object.keys(predicate)[0];
+    const value = Object.values(predicate)[0];
+    return Promise.resolve(
+      this.rows.filter(o => {
+        return o[key].includes(value);
+      })
+    );
+  }
 }
 
 module.exports = Db;
