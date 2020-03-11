@@ -18,6 +18,7 @@ class Db {
   find(predicate) {
     return Promise.resolve(filter(this.rows, predicate));
   }
+
   fuzzyFind(predicate) {
     const key = Object.keys(predicate)[0];
     const value = Object.values(predicate)[0];
