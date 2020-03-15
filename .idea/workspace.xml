@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ded34a79-3e9e-48f9-a720-2f702f6cc5c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +40,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/nvm/versions/node/v12.13.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v12.14.1/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -62,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583845569998</updated>
       <workItem from="1583845595361" duration="18489000" />
+      <workItem from="1584303334324" duration="4758000" />
     </task>
     <servers />
   </component>
@@ -77,9 +83,26 @@
       <screen x="0" y="27" width="1920" height="1004" />
     </state>
     <state x="693" y="278" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1004@0.27.1920.1004" timestamp="1583918519822" />
-    <state x="479" y="164" width="962" height="737" key="SettingsEditor" timestamp="1583918541507">
-      <screen x="0" y="27" width="1920" height="1004" />
+    <state width="1209" height="201" key="GridCell.Tab.0.bottom" timestamp="1584306294886">
+      <screen x="0" y="27" width="1232" height="773" />
     </state>
+    <state width="1209" height="201" key="GridCell.Tab.0.bottom/0.27.1232.773@0.27.1232.773" timestamp="1584306294886" />
+    <state width="1209" height="201" key="GridCell.Tab.0.center" timestamp="1584306294885">
+      <screen x="0" y="27" width="1232" height="773" />
+    </state>
+    <state width="1209" height="201" key="GridCell.Tab.0.center/0.27.1232.773@0.27.1232.773" timestamp="1584306294885" />
+    <state width="1209" height="201" key="GridCell.Tab.0.left" timestamp="1584306294884">
+      <screen x="0" y="27" width="1232" height="773" />
+    </state>
+    <state width="1209" height="201" key="GridCell.Tab.0.left/0.27.1232.773@0.27.1232.773" timestamp="1584306294884" />
+    <state width="1209" height="201" key="GridCell.Tab.0.right" timestamp="1584306294885">
+      <screen x="0" y="27" width="1232" height="773" />
+    </state>
+    <state width="1209" height="201" key="GridCell.Tab.0.right/0.27.1232.773@0.27.1232.773" timestamp="1584306294885" />
+    <state x="307" y="69" width="904" height="729" key="SettingsEditor" timestamp="1584306289573">
+      <screen x="0" y="27" width="1232" height="773" />
+    </state>
+    <state x="307" y="69" width="904" height="729" key="SettingsEditor/0.27.1232.773@0.27.1232.773" timestamp="1584306289573" />
     <state x="479" y="164" width="962" height="737" key="SettingsEditor/0.27.1920.1004@0.27.1920.1004" timestamp="1583918541507" />
     <state x="576" y="260" width="951" height="606" key="find.popup" timestamp="1583918585709">
       <screen x="0" y="27" width="1920" height="1004" />
@@ -89,9 +112,10 @@
       <screen x="0" y="27" width="1920" height="1004" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.27.1920.1004@0.27.1920.1004" timestamp="1583846352406" />
-    <state x="623" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1583936624891">
-      <screen x="0" y="27" width="1920" height="1004" />
+    <state x="400" y="196" width="672" height="523" key="search.everywhere.popup" timestamp="1584310079219">
+      <screen x="0" y="27" width="1232" height="773" />
     </state>
+    <state x="400" y="196" width="672" height="523" key="search.everywhere.popup/0.27.1232.773@0.27.1232.773" timestamp="1584310079219" />
     <state x="623" y="247" width="672" height="678" key="search.everywhere.popup/0.27.1920.1004@0.27.1920.1004" timestamp="1583936624891" />
   </component>
 </project>
