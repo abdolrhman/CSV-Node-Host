@@ -1,0 +1,85 @@
+<div class="container">
+
+  <div class="header">
+    <div class="row searchOptions">
+      <div class="col-sm-12 col-md-3">
+        <input type="text" name="searchMenu" class="form-control" placeholder="Search" #searchValue>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <select class="custom-select" #searchItem>
+          <option value="RAM" selected>RAM</option>
+          <option value="CPU">CPU</option>
+          <option value="OpSys">OpSys</option>
+          <option value="Inches">Inches</option>
+        </select>      
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <button class="btn btn-primary" (click)="searchByMenu(searchValue, searchItem)">Search</button>
+      </div>
+    </div>
+  
+    <div class="row searchOptions">
+      <div class="col-sm-12 col-md-6">
+        <input type="text" name="searchProduct" class="form-control" placeholder="Company or Product" #searchByProduct>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <button class="btn btn-primary" (click)="SearchByProduct(searchByProduct)">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-lg-6" *ngFor="let computer of computers">
+      <div class="card">
+        <div class="card-body">
+          <div class="left">
+            <h4>Company: <span>{{computer.Company}}</span></h4>
+            <h4>Type: <span>{{computer.Type}}</span></h4>
+            <h4>Resolution: <span>{{computer.Resolution}}</span></h4>
+            <h4>RAM: <span>{{computer.RAM}}</span></h4>
+            <h4>Graphics: <span>{{computer.Graphics}}</span></h4>
+            <h4>Weight: <span>{{computer.Weight}}</span></h4>
+          </div>
+          <div class="right">
+            <h4>Product: <span>{{computer.Product}}</span></h4>
+            <h4>Inches: <span>{{computer.Inches}}</span></h4>
+            <h4>CPU: <span>{{computer.CPU}}</span></h4>
+            <h4>Memory: <span>{{computer.Memory}}</span></h4>
+            <h4>OpSys: <span>{{computer.OpSys}}</span></h4>
+            <h4>Price: <span>{{computer.Price}}</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="company.length > 0">
+    <div class="col-sm-12 col-lg-6" *ngFor="let computer of company">
+      <div class="card">
+        <div class="card-body">
+          <div class="left">
+            <h4>Company: <span>{{computer.Company}}</span></h4>
+            <h4>Type: <span>{{computer.Type}}</span></h4>
+            <h4>Resolution: <span>{{computer.Resolution}}</span></h4>
+            <h4>RAM: <span>{{computer.RAM}}</span></h4>
+            <h4>Graphics: <span>{{computer.Graphics}}</span></h4>
+            <h4>Weight: <span>{{computer.Weight}}</span></h4>
+          </div>
+          <div class="right">
+            <h4>Product: <span>{{computer.Product}}</span></h4>
+            <h4>Inches: <span>{{computer.Inches}}</span></h4>
+            <h4>CPU: <span>{{computer.CPU}}</span></h4>
+            <h4>Memory: <span>{{computer.Memory}}</span></h4>
+            <h4>OpSys: <span>{{computer.OpSys}}</span></h4>
+            <h4>Price: <span>{{computer.Price}}</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row noData" *ngIf="computers.length < 1 && company.length < 1">
+    <div class="col-sm-12">
+      <h4 class="alert-danger">No Data Found</h4>
+    </div>
+  </div>
+</div>
